@@ -1,0 +1,40 @@
+.acerca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--segundo-bg-color);
+}
+.acerca-de_img img{
+    width: 35vw;
+}
+.cabecera {
+    text-align: center;
+    font-size: 4.5rem;
+}
+.acerca-de_container h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+.acerca-de_container h3 {
+    font-size: 2.6rem;
+}
+.acerca-de_container p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+@media (max-width: 768px){
+    .acerca{
+        flex-direction: column-reverse;
+    }
+    .acerca img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+@media (max-width: 365px){
+    .acerca img{
+        width: 90vw;
+    }
+}

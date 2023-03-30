@@ -1,0 +1,54 @@
+.contacto h2{
+    margin-bottom: 3rem;
+}
+.contacto form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contacto form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacto form .input-box input,
+.contacto form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--color-texto);
+    background: var(--segundo-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contacto form .input-box input{
+    width: 49%;
+}
+.contacto form textarea{
+    resize: none;
+}
+.contacto form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+@media (max-width: 991px){
+    .contacto{
+        min-height: auto;
+
+    }
+}
+@media (max-width: 450px){
+    .contacto form .input-box input{
+        width: 100%;
+    }
+}
